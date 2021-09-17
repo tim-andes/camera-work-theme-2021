@@ -1,0 +1,4 @@
+# This .gitignore is only for camera-work-theme-2021
+
+# ignore DS_Store
+.DS_Store
