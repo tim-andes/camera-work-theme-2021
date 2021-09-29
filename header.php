@@ -1,6 +1,7 @@
 <?php
 /**
- * The header for our theme
+ * The header for our theme. This will be the header for all pages other than the landing page.
+ * Landing page: custom-header.php
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
@@ -25,7 +26,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'camera-work-theme-2021' ); ?></a>
 
-	<header id="masthead" class="site-header flex flex-row pb-3">
+	<header id="masthead" class="site-header flex flex-row">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
