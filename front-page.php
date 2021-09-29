@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * This is the file for the landing page of your photo website.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -12,9 +12,9 @@
  * @package camera-work-theme-2021
  */
 
-get_header();
+get_header(); // should pull a custom front-page-only header
 ?>
-<!-- tailwind grid or pagebuilder for body -->
+<!-- SiteOrigin Page Builder for content -->
 <?php
 get_footer();
 ?>
