@@ -1,6 +1,6 @@
 <?php
 /**
- * Sample implementation of the Custom Header feature
+ * This is the header for the landing page.
  *
  * You can add an optional custom header image to header.php like so ...
  *
