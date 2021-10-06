@@ -12,9 +12,27 @@
  * @package camera-work-theme-2021
  */
 
-get_header(); // should pull a custom front-page-only header with no nav or logo
+//  get_header(); // should pull a custom front-page-only header with no nav or logo
 ?>
+
+<?php
+/* <?php wp_reset_query() ?> */
+?>
+
+<?php
+if(is_front_page())
+{
+get_header('front');
+}
+else
+{
+get_header();
+}
+wp_head();
+?>
+
 <!-- SiteOrigin Page Builder for content -->
+
 <?php
 get_footer();
 ?>
