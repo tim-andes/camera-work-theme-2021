@@ -29,11 +29,11 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<section class="hero hero-text">
+<section class="hero-image bg-center bg-no-repeat bg-cover h-screen text-white">
     <header id="header">
         
         <!--   Announcements   -->
-        <div id="announcements-container-front-hero" class="">
+        <div id="announcements-container-front-hero">
             <div id="announcements-text-front-hero">
                 Holiday Sale! All Gallery Prints 20% off until Jan. 1, 2022!
             </div><!-- #announcements-text-front-hero -->

@@ -29,16 +29,8 @@ header {
     font-family: 'Josefin Sans', serif;
 }
     
-.hero {
-    height: 100vh;
+.hero-image {
     background-image: url('assets/images/hero-image-swamp-web.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.hero-text {
-    color: white;
 }
 
 /* Desktop Nav Arrangement > 1366px wide */
