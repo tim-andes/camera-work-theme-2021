@@ -104,6 +104,7 @@ if ( ! function_exists( 'camera_work_theme_2021_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'camera_work_theme_2021_setup' );
 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -115,6 +116,7 @@ function camera_work_theme_2021_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'camera_work_theme_2021_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'camera_work_theme_2021_content_width', 0 );
+
 
 /**
  * Register widget area.
@@ -136,11 +138,17 @@ function camera_work_theme_2021_widgets_init() {
 }
 add_action( 'widgets_init', 'camera_work_theme_2021_widgets_init' );
 
+
 /**
  * Enqueue scripts and styles.
  */
 function camera_work_theme_2021_scripts() {
+	// add Tailwind CSS
 	wp_enqueue_style( 'camera-work-theme-2021-style', 'https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css', array(), _S_VERSION );
+
+	// add style.css - TA
+	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+	
 	wp_style_add_data( 'camera-work-theme-2021-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'camera-work-theme-2021-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
@@ -150,6 +158,7 @@ function camera_work_theme_2021_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'camera_work_theme_2021_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
