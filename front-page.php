@@ -16,15 +16,21 @@
 ?>
 
 <?php
-if(is_front_page())
-{
 get_header('front');
-}
-else
-{
-get_header();
-}
+
 wp_head();
+?>
+
+<?php
+// if(is_front_page())
+// {
+// get_header('front');
+// }
+// else
+// {
+// get_header();
+// }
+// wp_head();
 ?>
 
 <!-- SiteOrigin Page Builder for content -->
