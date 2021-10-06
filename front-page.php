@@ -16,7 +16,7 @@
 ?>
 
 <?php
-/* <?php wp_reset_query() ?> */
+/* <?php wp_reset_query() ?> TODO: Assess necessity */
 ?>
 
 <?php
