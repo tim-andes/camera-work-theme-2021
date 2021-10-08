@@ -33,7 +33,7 @@
     <header id="header">
         
         <!--   Announcements   -->
-        <div id="announcements-container-front-hero" class="sm:py-2">
+        <div id="announcements-container-front-hero" class="border-white border-solid border-b">
             <p id="announcements-text-front-hero" class="text-center">
                 Holiday Sale! All Gallery Prints 20% off until Jan. 1, 2022!
             </p><!-- #announcements-text-front-hero -->
