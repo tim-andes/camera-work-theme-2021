@@ -15,6 +15,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 camera-work-theme-2021 is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
+Notes:
+-- Any plugin styling is performed in Additional CSS within the WordPress Admin Control Panel
+Units:
 --Height, vh
 --Font, rem
 --Padding / margin, px
@@ -37,7 +40,7 @@ header, body {
     background-image: url('assets/images/hero-image-swamp-web.jpg');
 }
 
-/* Responsive - Front Page */
+/* Responsive - FRONT PAGE */
 /* Extra Large devices (laptops/desktops, 1280px and up) */
 @media only screen and (min-width: 1280px) {
     /* Announcement */
@@ -264,9 +267,15 @@ header, body {
         text-shadow: 1px -1px 15px rgb(32, 32, 32), -1px 1px 15px rgb(32, 32, 32);
     }/* End Nav Items */
 }/* Small devices (phones) (480px and down) */
-/* End Responsive - Front Page */
+/* End Responsive - FRONT PAGE */
 
-/* Footer */
+/* CONTACT */
+#contact-form {
+    margin: 20px !important;
+    min-height: 100vh;
+}
+
+/* FOOTER */
 .site-footer .site-info {
     text-align: center;
     font-size: 1.2rem;
