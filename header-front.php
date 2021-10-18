@@ -43,12 +43,12 @@
         <div id="hero-nav-front-container">
             <nav id="nav-front">
                 <ul id="ul-nav-front-hero">
-                <li><a id="gallery-li-nav" class="li-nav-front-hero" href="#"><h2>GALLERY</h2></a></li>
-                <li><a id="contact-li-nav" class="li-nav-front-hero" href="#"><h2>CONTACT</h2></a></li>
-                <li><a id="about-li-nav" class="li-nav-front-hero" href="#"><h2>ABOUT</h2></a></li>
+                <li><a id="gallery-li-nav" class="li-nav-front-hero" href="<?php echo site_url('/gallery'); ?>"><h2>GALLERY</h2></a></li>
+                <li><a id="contact-li-nav" class="li-nav-front-hero" href="<?php echo site_url('/contact'); ?>"><h2>CONTACT</h2></a></li>
+                <li><a id="about-li-nav" class="li-nav-front-hero" href="<?php echo site_url('/about'); ?>"><h2>ABOUT</h2></a></li>
                 </ul><!-- #ul-nav-section-front-hero -->
             </nav><!-- #nav-id -->
         </div><!-- #hero-nav-container -->
         
-    </header>
-</section>
+    </header><!-- #header -->
+</section><!-- .hero-image .bg-center .bg-no-repeat .bg-cover .h-screen .text-white -->
