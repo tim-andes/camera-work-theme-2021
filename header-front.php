@@ -35,7 +35,7 @@
         <!--   Announcements   -->
         <div id="announcements-container-front-hero" class="border-white border-solid border-b">
             <p id="announcements-text-front-hero" class="text-center">
-                Holiday Sale! All Gallery Prints 20% off until Jan. 1, 2022!
+                <!-- Holiday Sale! All Gallery Prints 20% off until Jan. 1, 2022! -->
             </p><!-- #announcements-text-front-hero -->
         </div><!-- #announcements-container-front-hero -->
         
@@ -43,9 +43,9 @@
         <div id="hero-nav-front-container">
             <nav id="nav-front">
                 <ul id="ul-nav-front-hero">
-                <li><a id="gallery-li-nav" class="li-nav-front-hero" href="#"><h2>Gallery</h2></a></li>
-                <li><a id="contact-li-nav" class="li-nav-front-hero" href="#"><h2>Contact</h2></a></li>
-                <li><a id="about-li-nav" class="li-nav-front-hero" href="#"><h2>About</h2></a></li>
+                <li><a id="gallery-li-nav" class="li-nav-front-hero" href="#"><h2>GALLERY</h2></a></li>
+                <li><a id="contact-li-nav" class="li-nav-front-hero" href="#"><h2>CONTACT</h2></a></li>
+                <li><a id="about-li-nav" class="li-nav-front-hero" href="#"><h2>ABOUT</h2></a></li>
                 </ul><!-- #ul-nav-section-front-hero -->
             </nav><!-- #nav-id -->
         </div><!-- #hero-nav-container -->
