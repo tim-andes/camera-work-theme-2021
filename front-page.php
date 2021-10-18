@@ -17,18 +17,17 @@
 ?>
 
 <?php
+// header-front.php
 get_header('front');
 
 wp_head();
 ?>
 
-<!-- SiteOrigin Page Builder for content -->
 <?php
-
-// Pull in PageBuilder content from Home page in WP Dashboard
+// Pull in PageBuilder/Editor content from Home page in WordPress Admin Dashboard
 if( get_option( 'page_on_front' ) ) {
     echo apply_filters( 'the_content', get_post( get_option( 'page_on_front' ) )->post_content );
-  }
+}
 ?>
 
 <?php
