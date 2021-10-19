@@ -26,7 +26,7 @@
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+</div><!-- #page Note: Starts in header.php-->
 
 <?php wp_footer(); ?>
 
