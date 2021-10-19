@@ -15,15 +15,15 @@
 get_header(); // not front page header, but normal header
 ?>
 
-	<main id="contact-main" class="site-main">
+	<main id="about" class="site-main">
 		<!-- SiteOrigin Page Builder for content -->
-        <div id="contact-form">
+        <div id="about-container">
             <?php 
-                $page = get_page_by_title('Contact');
+                $page = get_page_by_title('About');
                 echo apply_filters('the_content', $page->post_content);
             ?>
         </div>
-	</main><!-- #contact-main .site-main -->
+	</main><!-- #about .site-main -->
 </div><!-- body-container Note: starts in header.php -->
 
 <?php
