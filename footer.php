@@ -24,11 +24,11 @@
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'camera-work-theme-2021' ), 'camera-work-theme-2021', '<a href="https://github.com/tim-andes">Tim Andes</a>' );
 				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page Note: Starts in header.php-->
+		</div><!-- END .site-info -->
+	</footer><!-- END #colophon -->
+</div><!-- END #page Note: Starts in header.php-->
 
 <?php wp_footer(); ?>
-
+</div><!-- END .front-page-body-footer-container Note: Starts in front-page.php -->
 </body>
 </html>
