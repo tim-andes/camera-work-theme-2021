@@ -23,6 +23,8 @@ get_header('front');
 wp_head();
 ?>
 
+<div class="front-page-body-footer-container"><!-- This ends in footer.php-->
+
 <?php
 // Pull in PageBuilder/Editor content from Home page in WordPress Admin Dashboard
 if( get_option( 'page_on_front' ) ) {
