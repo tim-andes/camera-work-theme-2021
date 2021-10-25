@@ -36,8 +36,8 @@
         <div id="announcements-container-front-hero" class="border-white border-solid border-b">
             <p id="announcements-text-front-hero" class="text-center">
                 <!-- Holiday Sale! All Gallery Prints 20% off until Jan. 1, 2022! -->
-            </p><!-- #announcements-text-front-hero -->
-        </div><!-- #announcements-container-front-hero -->
+            </p><!-- END #announcements-text-front-hero -->
+        </div><!-- END #announcements-container-front-hero -->
         
         <!--   Nav Menu Items   -->
         <div id="hero-nav-front-container">
@@ -47,8 +47,8 @@
                 <li><a id="contact-li-nav" class="li-nav-front-hero" href="<?php echo site_url('/contact'); ?>"><h2>CONTACT</h2></a></li>
                 <li><a id="about-li-nav" class="li-nav-front-hero" href="<?php echo site_url('/about'); ?>"><h2>ABOUT</h2></a></li>
                 </ul><!-- #ul-nav-section-front-hero -->
-            </nav><!-- #nav-id -->
-        </div><!-- #hero-nav-container -->
+            </nav><!-- END #nav-id -->
+        </div><!-- END #hero-nav-container -->
         
-    </header><!-- #header -->
-</section><!-- .hero-image .bg-center .bg-no-repeat .bg-cover .h-screen .text-white -->
+    </header><!-- END #header -->
+</section><!-- END .hero-image .bg-center .bg-no-repeat .bg-cover .h-screen .text-white -->
