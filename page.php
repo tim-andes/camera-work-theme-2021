@@ -12,12 +12,12 @@
  * @package camera-work-theme-2021
  */
 
-get_header(); // not front page header, but normal header
+get_header();
 ?>
 
 	<main id="primary" class="site-main">
 		<!-- SiteOrigin Page Builder for content -->
-	</main><!-- #main -->
+	</main><!-- END #main -->
 
 <?php
 get_footer();
