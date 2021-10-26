@@ -37,7 +37,7 @@ header, body {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 h2 {
@@ -277,13 +277,10 @@ h2 {
 }/* Small devices (phones) (480px and down) */
 /* End Responsive - FRONT PAGE */
 
-/* CONTACT */
-#contact-form {
-    margin: 20px !important;
-    min-height: 100vh;
-}
-
 /* FOOTER */
+/* .site-footer {
+    margin-top: auto;
+} */
 .site-footer .site-info {
     text-align: center;
     font-size: 1.2rem;
@@ -296,3 +293,9 @@ h2 {
     align-items: center;
     justify-content: center;
 }
+
+.site-footer .sep {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+/* END FOOTER */
