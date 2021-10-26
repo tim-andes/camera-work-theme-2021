@@ -15,7 +15,7 @@
 get_header(); // not front page header, but normal header
 ?>
 
-	<main id="about-main" class="site-main">
+	<main id="about-main" class="site-main flex-row content-center min-h-full">
 		<!-- SiteOrigin Page Builder for content -->
         <div id="about-container">
             <?php 
