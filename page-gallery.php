@@ -15,7 +15,7 @@
 get_header(); // not front page header, but normal header
 ?>
 
-	<main id="gallery-main" class="site-main">
+	<main id="gallery-main" class="site-main min-h-full">
 		<!-- SiteOrigin Page Builder for content -->
         <div id="gallery-container">
             <?php 
