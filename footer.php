@@ -16,13 +16,13 @@
 			<a href="<?php echo esc_url( __( 'https://github.com/tim-andes/camera-work-theme-2021', 'camera-work-theme-2021' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'camera-work-theme-2021' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'camera-work-theme-2021' ), 'WordPress ' );
 				?>
 			</a>
-			<span class="sep"> | </span>
+			<span class="sep">|</span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'camera-work-theme-2021' ), 'camera-work-theme-2021', '<a href="https://github.com/tim-andes">Tim Andes</a>' );
+				printf( esc_html__( ' Theme: %1$s by %2$s.', 'camera-work-theme-2021' ), 'camera-work-theme-2021', '<a href="https://github.com/tim-andes">Tim Andes</a>' );
 				?>
 		</div><!-- END .site-info -->
 	</footer><!-- END #colophon -->
