@@ -160,8 +160,9 @@ function camera_work_theme_2021_scripts() {
 add_action( 'wp_enqueue_scripts', 'camera_work_theme_2021_scripts' );
 
 /** 
- * Gallery Functions
+ * Gallery Functions, page-gallery.php
  * 
+ * Notes:
  * Front End: Title
  * Back End: Upload field, Title
  * 
@@ -179,7 +180,7 @@ function create_photograph_post_type() {
 			'singular name' => __('Photograph')
 		),
 		'public' => true,
-		'has_archive' => true,
+		'has_archive' => false, // disabled to hide archive page
 		'show_in_rest' => true,
 		'description' => 'This the custom post type for photographs that will feed into the gallery.',
 		'menu_icon' => 'dashicons-format-gallery',
@@ -205,7 +206,7 @@ function custom_photography_post_type() {
 		'not_found_in_trash' => __('Photograph Not Found in Trash', 'camera-work-theme-2021'),
 	);
 
-	// Set other options for Custom Post Type
+	// Set other options for Custom Post Type - Photographs
 	$args = array(
 		'label' 	  => __('photographs', 'camera-work-theme-2021'),
 		'description' => __('Photographs for the gallery.', 'camera-work-theme-2021'),
@@ -223,7 +224,7 @@ function custom_photography_post_type() {
         'can_export'          => true,
         'has_archive'         => true,
         'exclude_from_search' => false,
-        'publicly_queryable'  => true,
+        'publicly_queryable'  => false, // disabled to hide single post type pages
         'capability_type'     => 'post',
         'show_in_rest' 		  => true,
 	);
@@ -239,8 +240,31 @@ function remove_editor_from_photography_post() {
 }
 
 /** 
- * END Gallery Functions
+ * END Gallery Functions, page-gallery.php
 */
+
+/**
+ * 404 Functions, 404.php
+ */
+
+/**
+ * Add back button for 404.php
+ */
+
+add_action( 'back_button', 'wpse221640_back_button' );
+function wpse221640_back_button()
+{
+    if ( wp_get_referer() )
+    {
+        $back_text = __( '&laquo; Back' );
+        $button    = "\n<button id='404-back-button' class='btn button my-back-button' onclick='javascript:history.back()'>$back_text</button>";
+        echo ( $button );
+    }
+}
+
+/**
+ * END 404 Functions, 404.php
+ */
 
 /**
  * Implement the Custom Header feature.
