@@ -159,6 +159,88 @@ function camera_work_theme_2021_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'camera_work_theme_2021_scripts' );
 
+/** 
+ * Gallery Functions
+ * 
+ * Front End: Title
+ * Back End: Upload field, Title
+ * 
+*/
+
+/**
+ * Create Post Type - Photographs
+ */
+function create_photograph_post_type() {
+	register_post_type('photographs', // this generic name may conflict with other plugins / themes
+	// CPT Options
+	array(
+		'labels' => array(
+			'name' => __('Photographs'),
+			'singular name' => __('Photograph')
+		),
+		'public' => true,
+		'has_archive' => true,
+		'show_in_rest' => true,
+		'description' => 'This the custom post type for photographs that will feed into the gallery.',
+		'menu_icon' => 'dashicons-format-gallery',
+	)
+	);
+}
+add_action('init', 'create_photograph_post_type');
+
+function custom_photography_post_type() {
+	// Set UI Labels
+	$labels = array(
+		'name' 				 => _x('Photographs', 'Post Type General Name', 'camera-work-theme-2021'),
+		'singular_name' 	 => _x('Photograph', 'Post Type Singular Name', 'camera-work-theme-2021'),
+		'menu_name' 		 => __('Photographs', 'camera-work-theme-2021'),
+		'all_items' 		 => __('All Photographs', 'camera-work-theme-2021'),
+		'view_item' 		 => __('View Photograph', 'camera-work-theme-2021'),
+		'add_new_item' 		 => __('Add New Photograph', 'camera-work-theme-2021'),
+		'add_new' 			 => __('Add New', 'camera-work-theme-2021'),
+		'edit_item' 		 => __('Edit Photograph', 'camera-work-theme-2021'),
+		'update_item' 		 => __('Update Photograph', 'camera-work-theme-2021'),
+		'search_items' 		 => __('Search Photographs', 'camera-work-theme-2021'),
+		'not_found' 		 => __('Photograph Not Found', 'camera-work-theme-2021'),
+		'not_found_in_trash' => __('Photograph Not Found in Trash', 'camera-work-theme-2021'),
+	);
+
+	// Set other options for Custom Post Type
+	$args = array(
+		'label' 	  => __('photographs', 'camera-work-theme-2021'),
+		'description' => __('Photographs for the gallery.', 'camera-work-theme-2021'),
+		'labels' 	  => $labels,
+		// Features this CPT supports in Post Editor
+		'supports' 			  => array('title', 'thumbnail', 'revisions', 'custom-fields'),
+		'taxonomies' 		  => array('tags'),
+		'hierarchical'        => false,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'post',
+        'show_in_rest' 		  => true,
+	);
+	// Registering your Custom Post Type
+    register_post_type('photographs', $args);
+}
+add_action( 'init', 'custom_photography_post_type', 0 );
+
+// Remove Editor from Photography post
+add_action('init', 'remove_editor_from_photography_post');
+function remove_editor_from_photography_post() {
+	remove_post_type_support('photographs', 'editor');
+}
+
+/** 
+ * END Gallery Functions
+*/
 
 /**
  * Implement the Custom Header feature.
