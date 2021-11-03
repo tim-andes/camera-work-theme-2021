@@ -15,14 +15,14 @@
 get_header(); // not front page header, but normal header
 ?>
 
-	<main id="gallery-main" class="site-main min-h-full">
+	<main id="gallery-main" class="site-main min-h-screen lg:grid-cols-6 lg:grid-rows-6">
 		<!-- SiteOrigin Page Builder for content -->
-        <div id="gallery-container">
-            <?php 
+        <div id="gallery-main-child" class="min-h-full lg:col-start-2 lg:col-span-4 lg:row-start-2 lg:row-span-4">
+            <?php
                 $page = get_page_by_title('Gallery');
                 echo apply_filters('the_content', $page->post_content);
             ?>
-        </div>
+        </div><!-- gallery-main-child -->
 	</main><!-- #gallery-main .site-main -->
 </div><!-- body-container Note: starts in header.php -->
 
