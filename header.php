@@ -32,7 +32,7 @@
 	<div id="body-container" class="flex flex-row">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'camera-work-theme-2021' ); ?></a>
 
-		<header id="masthead" class="site-header mr-5">
+		<header id="masthead" class="site-header">
 			<div class="site-branding">
 				<?php
 				the_custom_logo();
