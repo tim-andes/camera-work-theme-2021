@@ -25,13 +25,11 @@ Units:
 
 html {
     height: 100%;
-
     font-size: 10px;
 }
     
 body {
     min-height: 100%;
-
     margin: 0;
     padding: 0;
 }
@@ -282,9 +280,9 @@ h2 {
 /* End Responsive - FRONT PAGE */
 
 /* FOOTER */
-/* .site-footer {
+.site-footer {
     margin-top: auto;
-} */
+}
 .site-footer .site-info {
     text-align: center;
     font-size: 1.2rem;
