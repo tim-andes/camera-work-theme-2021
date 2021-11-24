@@ -179,9 +179,9 @@ function create_photograph_post_type() {
 			'name' => __('Photographs'),
 			'singular name' => __('Photograph')
 		),
-		'public' => true,
+		'public' => true, // public visibility
 		'has_archive' => false, // disabled to hide archive page
-		'show_in_rest' => true,
+		'show_in_rest' => true, // enables block editor support
 		'description' => 'This the custom post type for photographs that will feed into the gallery.',
 		'menu_icon' => 'dashicons-format-gallery',
 	)
@@ -190,7 +190,7 @@ function create_photograph_post_type() {
 add_action('init', 'create_photograph_post_type');
 
 function custom_photography_post_type() {
-	// Set UI Labels
+	// Set UI Labels for Photographs
 	$labels = array(
 		'name' 				 => _x('Photographs', 'Post Type General Name', 'camera-work-theme-2021'),
 		'singular_name' 	 => _x('Photograph', 'Post Type Singular Name', 'camera-work-theme-2021'),
@@ -206,7 +206,7 @@ function custom_photography_post_type() {
 		'not_found_in_trash' => __('Photograph Not Found in Trash', 'camera-work-theme-2021'),
 	);
 
-	// Set other options for Custom Post Type - Photographs
+	// Set other options for Photographs
 	$args = array(
 		'label' 	  => __('photographs', 'camera-work-theme-2021'),
 		'description' => __('Photographs for the gallery.', 'camera-work-theme-2021'),
