@@ -15,14 +15,42 @@
 get_header(); // not front page header, but normal header
 ?>
 
-	<main id="gallery-main" class="site-main min-h-screen lg:grid-cols-6 lg:grid-rows-6">
+	<main id="gallery-main" class="site-main lg:col-start-3 lg:col-end-11 md:col-start-3 row-start-2">
 		<!-- SiteOrigin Page Builder for content -->
-        <div id="gallery-main-child" class="min-h-full lg:col-start-2 lg:col-span-4 lg:row-start-2 lg:row-span-4">
+        <div class="grid-container-1"></div>
+        <div id="gallery-container" class="grid-container-2">
             <?php
                 $page = get_page_by_title('Gallery');
                 echo apply_filters('the_content', $page->post_content);
             ?>
+
+            <!-- Gallery photographs loop -->
+            <?php 
+            /**
+             * Setup query to show the photographs.
+             * Output the thumbnail.
+             */
+            /**
+             *                 $args = array(  
+             *       'post_type' => 'photographs',
+             *       'post_status' => 'publish',
+             *       'posts_per_page' => 2
+             *   );
+
+             *   $loop = new WP_Query( $args ); 
+                    
+             *   while ( $loop->have_posts() ) : $loop->the_post(); 
+             *       the_post_thumbnail('medium_large');
+             *   endwhile;
+
+             *   wp_reset_postdata(); 
+            */
+
+
+            ?>
+
         </div><!-- gallery-main-child -->
+        <div class="grid-container-3"></div>
 	</main><!-- #gallery-main .site-main -->
 </div><!-- body-container Note: starts in header.php -->
 
