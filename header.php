@@ -29,7 +29,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site min-h-screen relative pb-10">
-	<div id="body-container" class="lg:h-screen lg:grid lg:grid-cols-12 lg:grid-rows-6">
+	<div id="body-container" class="lg:h-screen lg:grid lg:grid-cols-12 lg:grid-rows-6 md:grid-cols-6">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'camera-work-theme-2021' ); ?></a>
 
 		<header id="masthead" class="site-header lg:h-screen lg:grid lg:grid-rows-6">
@@ -39,7 +39,7 @@
 				?>
 			</div><!-- END .site-branding -->
 
-			<nav id="site-navigation" class="row-start-2"><!-- Menu Side Bar area -->
+			<nav id="site-navigation" class="lg:row-start-2"><!-- Menu Side Bar area -->
 				<?php
 				wp_nav_menu(
 					array(
