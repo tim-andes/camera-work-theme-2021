@@ -39,14 +39,14 @@
 				?>
 			</div><!-- END .site-branding -->
 
-			<nav id="site-navigation" class="lg:row-start-2"><!-- Menu Side Bar area -->
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
+			<nav id="site-navigation" class="lg:row-start-2">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
 			</nav><!-- END #site-navigation -->
 		</header><!-- END #masthead -->
